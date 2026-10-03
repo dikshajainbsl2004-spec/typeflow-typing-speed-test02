@@ -21,15 +21,18 @@
       </div>
 
       <form id="loginForm" class="auth-form">
-        <label>User ID<input id="loginId" required autocomplete="username" placeholder="e.g. diksha01"></label>
+        <label>User ID<input id="loginId" required autocomplete="username" placeholder="e.g. example01"></label>
         <label>Password<input id="loginPassword" type="password" required autocomplete="current-password" placeholder="Your password"></label>
         <button class="primary full" type="submit">Enter TypeFlow</button>
+        <button id="guestBtn" class="secondary full" type="button">
+          Continue as Guest
+        </button>
       </form>
 
       <form id="registerForm" class="auth-form hidden">
         <label>Display Name<input id="registerName" required maxlength="24" placeholder="Your name"></label>
         <label>Create User ID<input id="registerId" required minlength="3" maxlength="18" pattern="[A-Za-z0-9_]+" placeholder="letters, numbers, underscore"></label>
-        <label>Password<input id="registerPassword" type="password" required minlength="4" placeholder="Minimum 4 characters"></label>
+        <label>Password<input id="registerPassword" type="password" required minlength="8" placeholder="Minimum 4 characters"></label>
         <button class="primary full" type="submit">Create My ID</button>
       </form>
 
